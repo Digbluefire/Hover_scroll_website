@@ -1,0 +1,137 @@
+/* color palette chosen from https://colorpalettes.net/color-palette-2255/ */
+body {
+    background-color: rgb(10, 10, 10);
+    height: 20vh;  
+    margin: 0px;
+    overflow: hidden;
+}
+
+#gallery{
+    height: 40vmax;
+    width: 40vmax;  
+}
+
+.tile > img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    border-radius: inherit;
+    opacity:0;
+    transition:opacity 800ms ease, transform 800ms ease;
+}
+
+.tile{
+    border-radius: 1rem;
+    position:absolute;
+    transition: transform 800ms ease;
+}
+/* Makes the image slightly larger when hovered over with the cursor */
+.tile:hover {
+    transform:scale(1.1);
+}
+
+.tile:hover > img {
+    opacity:1;
+}
+
+
+
+.tile:nth-child(1) {
+    background-color:#5fe54d;
+    height:5rem;
+    width:14rem;
+    left:12rem;
+    top:3rem;
+}
+.tile:nth-child(2) {
+    background-color:#37a5d8;
+    height:15rem;
+    width: 18rem;
+    right:3rem;
+    top:38rem;
+}
+.tile:nth-child(3) {
+    background-color:#44258b;
+    height:16rem;
+    width:11.2rem;
+    left:21rem;
+    top:9rem;
+}
+.tile:nth-child(4) {
+    background-color:#7d5683;
+    height:7rem;
+    width:13rem;
+    left: 34rem;
+    top:19rem;
+}
+.tile:nth-child(5) {
+    background-color:#c9bfb5;
+    height:11rem;
+    width:4.5rem;
+    left:50rem;
+    top:4rem;
+}
+.tile:nth-child(6) {
+    background-color:#e2e9ff;
+    height:12rem;
+    width:8rem;
+    left:35rem;
+    top: 37rem;
+}
+.tile:nth-child(7) {
+    background-color:#c7718a;
+    height:7rem;
+    width:19rem;
+    left:12rem;
+    top:27rem;
+}
+.tile:nth-child(8) {
+    background-color:#c994b7;
+    height:9rem;
+    width:17rem;
+    top:10rem;
+    left: 1.5rem;
+}
+.tile:nth-child(9) {
+    background-color:#3b0758;
+    height:14rem;
+    width:6rem;
+    left:60rem;
+    top:32rem;
+}
+.tile:nth-child(10) {
+    background-color:#1b2b45;
+    height:6rem;
+    width:12rem;
+    left:46rem;
+    top:30rem;
+}
+.tile:nth-child(11) {
+    background-color:#11613c;
+    height:14rem;
+    width:23rem;
+    left:69rem;
+    top:40rem;
+}
+.tile:nth-child(12) {
+    background-color:#f02b61;
+    height:11rem;
+    width:23rem;
+    left:64rem;
+    bottom:13rem;
+}
+.tile:nth-child(13) {
+    background-color:#ff663d;
+    height:16rem;
+    width:5rem;
+    left:38rem;
+    bottom:22rem;
+    top: 2rem;
+}
+.tile:nth-child(14) {
+    background-color:#fe9553;
+    height:14rem;
+    width:5rem;
+    left:4rem;
+    top:24rem;
+}
